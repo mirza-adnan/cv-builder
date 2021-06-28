@@ -1,0 +1,29 @@
+:root {
+    --clr-orange: #ee6352;
+    --clr-black: #24252a;
+    --clr-gray: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--clr-gray);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--clr-black);
+    color: var(--clr-orange);
+    padding: 30px;
+}
+
+.fa-file-alt {
+    font-size: 2.5rem;
+    margin-right: 20px;
+}
