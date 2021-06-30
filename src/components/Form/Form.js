@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Personal from './Personal';
 
 export default function Form(props) {
-    return (
-        <div>
-            
-        </div>
-    )
+	return (
+		<form className='cv-form'>
+			<Personal />
+		</form>
+	);
 }

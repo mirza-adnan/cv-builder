@@ -1,29 +1,96 @@
 :root {
-    --clr-orange: #ee6352;
-    --clr-black: #24252a;
-    --clr-gray: #ddd;
+	--clr-orange: #ee6352;
+	--clr-black: #24252a;
+	--clr-gray: #ddd;
+	--input-border: #d3d3d3;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: var(--clr-gray);
+	font-family: 'Poppins', sans-serif;
+	background-color: var(--clr-gray);
 }
 
 header {
-    display: flex;
-    align-items: center;
-    background-color: var(--clr-black);
-    color: var(--clr-orange);
-    padding: 30px;
+	display: flex;
+	align-items: center;
+	background-color: var(--clr-black);
+	color: var(--clr-orange);
+	padding: 30px;
 }
 
-.fa-file-alt {
-    font-size: 2.5rem;
-    margin-right: 20px;
+i.fa-file-alt {
+	font-size: 2.5rem;
+	margin-right: 20px;
+}
+
+/* form styling */
+main {
+	display: flex;
+	justify-content: center;
+	padding: 4rem 0px;
+}
+
+.cv-form {
+	width: 90%;
+	max-width: 850px;
+	padding: 2rem;
+	background-color: rgb(238, 238, 238);
+	-webkit-box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	color: var(--clr-black);
+}
+
+.cv-form h2 {
+	text-decoration: underline;
+	margin-bottom: 20px;
+}
+
+.double-field {
+	display: flex;
+	gap: 20px;
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-bottom: 10px;
+}
+
+.text-input {
+	width: 100%;
+	border-radius: 5px;
+	border: solid 1.5px var(--input-border);
+	outline: none;
+	padding: 8px 10px;
+	margin-top: 5px;
+	font-family: 'Poppins', sans-serif;
+	transition: box-shadow 0.3s;
+}
+
+.text-input:hover,
+.text-input:focus {
+	box-shadow: 0px 0px 5px 2px var(--input-border);
+}
+
+textarea {
+	padding: 5px 10px;
+	border: solid 1.5px var(--input-border);
+	outline: none;
+	border-radius: 5px;
+	font-family: 'Poppins', sans-serif;
+	margin-top: 5px;
+	resize: none;
+}
+
+textarea:hover,
+textarea:focus {
+	box-shadow: 0px 0px 5px 2px var(--input-border);
 }
