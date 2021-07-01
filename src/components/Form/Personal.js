@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Personal(props) {
 	return (
-		<div className='personal-info'>
+		<section className='personal-info'>
 			<h2>Personal Information</h2>
 			<div className='double-field'>
 				<div className='field'>
@@ -81,6 +81,6 @@ export default function Personal(props) {
 					rows='6'
 					placeholder='Describe yourself briefly'></textarea>
 			</div>
-		</div>
+		</section>
 	);
 }
