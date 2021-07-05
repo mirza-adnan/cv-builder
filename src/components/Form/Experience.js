@@ -41,7 +41,7 @@ function Experience() {
 				<div className='field'>
 					<label htmlFor='exp-from'>From</label>
 					<input
-						type='date'
+						type='text'
 						name='expFrom'
 						class='text-input'
 						placeholder='From'
@@ -52,7 +52,7 @@ function Experience() {
 				<div className='field'>
 					<label htmlFor='exp-to'>To</label>
 					<input
-						type='date'
+						type='text'
 						name='expTo'
 						class='text-input'
 						placeholder='To'

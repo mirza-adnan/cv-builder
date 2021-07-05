@@ -52,7 +52,7 @@ function Education() {
 				<div className='field'>
 					<label htmlFor='edu-from'>From</label>
 					<input
-						type='date'
+						type='text'
 						name='eduFrom'
 						class='text-input'
 						placeholder='From'
@@ -63,7 +63,7 @@ function Education() {
 				<div className='field'>
 					<label htmlFor='edu-to'>To</label>
 					<input
-						type='date'
+						type='text'
 						name='eduTo'
 						class='text-input'
 						placeholder='To'
