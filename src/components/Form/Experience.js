@@ -3,72 +3,61 @@ import React from 'react';
 function Experience() {
 	return (
 		<section className='experience'>
-			<h2>Education</h2>
+			<h2>Experience</h2>
 			<div className='field'>
-				<label htmlFor='institute'>Institution Name</label>
+				<label htmlFor='position'>Position</label>
 				<input
 					type='text'
-					name='institute'
+					name='position'
 					class='text-input'
-					placeholder='Institution Name'
+					placeholder='Position'
 					autoComplete='off'
-					id='institute'
+					id='position'
 				/>
 			</div>
 			<div className='field'>
-				<label htmlFor='city'>City</label>
+				<label htmlFor='company'>Company</label>
 				<input
 					type='text'
-					name='city'
+					name='company'
+					class='text-input'
+					placeholder='Company'
+					autoComplete='off'
+					id='company'
+				/>
+			</div>
+			<div className='field'>
+				<label htmlFor='exp-city'>City</label>
+				<input
+					type='email'
+					name='exp-city'
 					class='text-input'
 					placeholder='City'
 					autoComplete='off'
-					id='city'
-				/>
-			</div>
-			<div className='field'>
-				<label htmlFor='degree'>Degree</label>
-				<input
-					type='email'
-					name='degree'
-					class='text-input'
-					placeholder='Degree'
-					autoComplete='off'
-					id='degree'
-				/>
-			</div>
-			<div className='field'>
-				<label htmlFor='subject'>Subject</label>
-				<input
-					type='text'
-					name='subject'
-					class='text-input'
-					placeholder='Subject'
-					autoComplete='off'
-					id='subject'
+					id='exp-city'
 				/>
 			</div>
 			<div className='double-field'>
 				<div className='field'>
-					<label htmlFor='edu-from'>From</label>
+					<label htmlFor='exp-from'>From</label>
 					<input
 						type='date'
-						name='eduFrom'
+						name='expFrom'
 						class='text-input'
 						placeholder='From'
 						autoComplete='off'
-						id='edu-from'
+						id='exp-from'
 					/>
 				</div>
 				<div className='field'>
-					<label htmlFor='edu-to'>To</label>
+					<label htmlFor='exp-to'>To</label>
 					<input
 						type='date'
-						name='eduTo'
+						name='expTo'
 						class='text-input'
 						placeholder='To'
 						autoComplete='off'
-						id='edu-to'
+						id='exp-to'
 					/>
 				</div>
 			</div>
