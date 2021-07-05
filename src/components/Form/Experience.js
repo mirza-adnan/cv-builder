@@ -61,6 +61,10 @@ function Experience() {
 					/>
 				</div>
 			</div>
+			<div className='buttons'>
+				<button className='btn add-btn'>Add</button>
+				<button className='btn delete-btn'>Delete</button>
+			</div>
 		</section>
 	);
 }
