@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Education() {
+function Education(props) {
 	return (
 		<section className='education'>
 			<h2>Education</h2>
@@ -50,25 +50,25 @@ function Education() {
 			</div>
 			<div className='double-field'>
 				<div className='field'>
-					<label htmlFor='edu-from'>From</label>
+					<label htmlFor='from'>From</label>
 					<input
 						type='text'
-						name='eduFrom'
+						name='from'
 						class='text-input'
 						placeholder='From'
 						autoComplete='off'
-						id='edu-from'
+						id='from'
 					/>
 				</div>
 				<div className='field'>
-					<label htmlFor='edu-to'>To</label>
+					<label htmlFor='to'>To</label>
 					<input
 						type='text'
-						name='eduTo'
+						name='to'
 						class='text-input'
 						placeholder='To'
 						autoComplete='off'
-						id='edu-to'
+						id='to'
 					/>
 				</div>
 			</div>

@@ -27,37 +27,37 @@ function Experience() {
 				/>
 			</div>
 			<div className='field'>
-				<label htmlFor='exp-city'>City</label>
+				<label htmlFor='city'>City</label>
 				<input
 					type='email'
-					name='exp-city'
+					name='city'
 					class='text-input'
 					placeholder='City'
 					autoComplete='off'
-					id='exp-city'
+					id='city'
 				/>
 			</div>
 			<div className='double-field'>
 				<div className='field'>
-					<label htmlFor='exp-from'>From</label>
+					<label htmlFor='from'>From</label>
 					<input
 						type='text'
-						name='expFrom'
+						name='from'
 						class='text-input'
 						placeholder='From'
 						autoComplete='off'
-						id='exp-from'
+						id='from'
 					/>
 				</div>
 				<div className='field'>
-					<label htmlFor='exp-to'>To</label>
+					<label htmlFor='to'>To</label>
 					<input
 						type='text'
-						name='expTo'
+						name='to'
 						class='text-input'
 						placeholder='To'
 						autoComplete='off'
-						id='exp-to'
+						id='to'
 					/>
 				</div>
 			</div>
