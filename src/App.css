@@ -36,11 +36,19 @@ main {
 	display: flex;
 	justify-content: center;
 	padding: 4rem 0px;
+	position: relative;
 }
 
 .flip-container {
 	width: 90%;
 	max-width: 850px;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease;
+	transform: rotateY(180deg);
+}
+
+.flip-container:hover {
 }
 
 .cv-form {
@@ -55,6 +63,19 @@ main {
 .cv-form h2 {
 	text-decoration: underline;
 	margin: 30px 0px;
+}
+
+.front {
+	position: absolute;
+	backface-visibility: hidden;
+	width: 100%;
+}
+
+.back {
+	width: 100%;
+	position: absolute;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
 }
 
 .double-field {
