@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Form from './Form/Form';
+import Preview from './Preview/Preview';
 
 export class Main extends Component {
 	constructor() {
@@ -33,13 +34,21 @@ export class Main extends Component {
 					to: '',
 				},
 			],
+			flip: false,
 		};
 	}
 
 	render() {
 		return (
 			<main>
-				<Form />
+				<div className='flip-container'>
+					<div className='front'>
+						<Form />
+					</div>
+					<div className='back'>
+						<Preview />
+					</div>
+				</div>
 			</main>
 		);
 	}
