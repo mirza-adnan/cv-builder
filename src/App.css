@@ -4,7 +4,7 @@
 	--clr-gray: #ddd;
 	--input-border: #d3d3d3;
 	--clr-offwhtie: #f8f8ff;
-	--form-body: #eee;
+	--body: #eee;
 }
 
 * {
@@ -24,6 +24,7 @@ header {
 	background-color: var(--clr-black);
 	color: var(--clr-orange);
 	padding: 30px;
+	font-size: 1.5rem;
 }
 
 i.fa-file-alt {
@@ -53,7 +54,7 @@ main {
 
 .cv-form {
 	padding: 0px 30px 20px;
-	background-color: var(--form-body);
+	background-color: var(--body);
 	-webkit-box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3);
 	color: var(--clr-black);
@@ -149,4 +150,23 @@ textarea:focus {
 .add-btn {
 	background-color: var(--clr-orange);
 	color: #f8f8ff;
+}
+
+/* Preview styling */
+.preview {
+	background-color: var(--body);
+}
+
+.prev-header {
+	padding: 25px;
+	color: var(--clr-orange);
+	background-image: linear-gradient(to right, #24252a, #575555);
+	font-size: 1.3rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-right {
+	font-size: 1rem;
+	font-weight: 500;
 }
