@@ -24,7 +24,7 @@ header {
 	background-color: var(--clr-black);
 	color: var(--clr-orange);
 	padding: 30px;
-	font-size: 1.5rem;
+	font-size: clamp(1rem, 1.8vw, 48px);
 }
 
 i.fa-file-alt {
@@ -46,6 +46,8 @@ main {
 	position: absolute;
 	transform-style: preserve-3d;
 	transition: all 0.5s ease;
+	display: flex;
+	justify-content: center;
 	transform: rotateY(180deg);
 }
 
@@ -67,9 +69,9 @@ main {
 }
 
 .front {
+	width: 100%;
 	position: absolute;
 	backface-visibility: hidden;
-	width: 100%;
 }
 
 .back {
@@ -155,18 +157,45 @@ textarea:focus {
 /* Preview styling */
 .preview {
 	background-color: var(--body);
+	overflow: hidden;
+	height: 800px;
+	word-break: break-all;
+	-webkit-box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3);
 }
 
 .prev-header {
-	padding: 25px;
+	padding: 2em 2.5em;
 	color: var(--clr-orange);
 	background-image: linear-gradient(to right, #24252a, #575555);
-	font-size: 1.3rem;
+	font-size: clamp(0.7rem, 2.5vw, 1.3rem);
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
 }
 
 .header-right {
-	font-size: 1rem;
+	font-size: clamp(0.7rem, 2.3vw, 1rem);
 	font-weight: 500;
+}
+
+.preview h3 {
+	color: var(--clr-black);
+	border-bottom: 1px solid rgb(196, 194, 194);
+	margin-bottom: 10px;
+}
+
+.preview-main {
+	padding: 2em 2.8em;
+	font-size: clamp(0.8rem, 2.7vw, 1rem);
+}
+
+.preview-section {
+	margin-bottom: 20px;
+}
+
+.preview-section p {
+	font-style: italic;
+	color: #504e4e;
 }
