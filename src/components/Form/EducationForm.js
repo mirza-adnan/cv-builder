@@ -1,6 +1,8 @@
 import React from 'react';
 
-function EducationForm() {
+function EducationForm(props) {
+	const { id, education, handleChange, handleAdd, handleDelete, isLast } =
+		props;
 	return (
 		<div>
 			<div className='field'>
@@ -11,6 +13,8 @@ function EducationForm() {
 					className='text-input'
 					placeholder='Institution Name'
 					autoComplete='off'
+					value={education.institute}
+					onChange={(e) => handleChange(e, id)}
 				/>
 			</div>
 			<div className='field'>
@@ -21,16 +25,20 @@ function EducationForm() {
 					className='text-input'
 					placeholder='Location'
 					autoComplete='off'
+					value={education.location}
+					onChange={(e) => handleChange(e, id)}
 				/>
 			</div>
 			<div className='field'>
 				<label>Degree</label>
 				<input
-					type='email'
+					type='text'
 					name='degree'
 					className='text-input'
 					placeholder='Degree'
 					autoComplete='off'
+					value={education.degree}
+					onChange={(e) => handleChange(e, id)}
 				/>
 			</div>
 			<div className='field'>
@@ -41,6 +49,8 @@ function EducationForm() {
 					className='text-input'
 					placeholder='Subject'
 					autoComplete='off'
+					value={education.subject}
+					onChange={(e) => handleChange(e, id)}
 				/>
 			</div>
 			<div className='double-field'>
@@ -52,6 +62,8 @@ function EducationForm() {
 						className='text-input'
 						placeholder='From'
 						autoComplete='off'
+						value={education.from}
+						onChange={(e) => handleChange(e, id)}
 					/>
 				</div>
 				<div className='field'>
@@ -62,12 +74,20 @@ function EducationForm() {
 						className='text-input'
 						placeholder='To'
 						autoComplete='off'
+						value={education.to}
+						onChange={(e) => handleChange(e, id)}
 					/>
 				</div>
 			</div>
 			<div className='buttons'>
-				<button className='btn add-btn'>Add</button>
-				<button className='btn delete-btn'>Delete</button>
+				{isLast ? (
+					<button className='btn add-btn' onClick={handleAdd}>
+						Add
+					</button>
+				) : null}
+				<button className='btn delete-btn' onClick={() => handleDelete(id)}>
+					Delete
+				</button>
 			</div>
 		</div>
 	);
