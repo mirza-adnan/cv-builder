@@ -19,7 +19,7 @@ export class Main extends Component {
 			education: [
 				{
 					institute: '',
-					city: '',
+					location: '',
 					degree: '',
 					subject: '',
 					from: '',
@@ -31,7 +31,7 @@ export class Main extends Component {
 				{
 					position: '',
 					company: '',
-					city: '',
+					location: '',
 					from: '',
 					to: '',
 					id: uniqid(),
@@ -43,6 +43,9 @@ export class Main extends Component {
 		this.handleChangeEducation = this.handleChangeEducation.bind(this);
 		this.handleAddEducation = this.handleAddEducation.bind(this);
 		this.handleDeleteEducation = this.handleDeleteEducation.bind(this);
+		this.handleChangeExperience = this.handleChangeExperience.bind(this);
+		this.handleAddExperience = this.handleAddExperience.bind(this);
+		this.handleDeleteExperience = this.handleDeleteExperience.bind(this);
 	}
 
 	handleChangePersonal(e) {
@@ -56,7 +59,6 @@ export class Main extends Component {
 	}
 
 	handleChangeEducation(e, id) {
-		e.preventDefault();
 		const { name, value } = e.target;
 		const newEducationArray = this.state.education.map((educationObj) => {
 			if (educationObj.id === id) {
@@ -75,7 +77,7 @@ export class Main extends Component {
 	handleAddEducation() {
 		const newEducationObj = {
 			institute: '',
-			city: '',
+			location: '',
 			degree: '',
 			subject: '',
 			from: '',
@@ -96,6 +98,45 @@ export class Main extends Component {
 		});
 	}
 
+	handleChangeExperience(e, id) {
+		const { name, value } = e.target;
+		const newExperienceArray = this.state.experience.map((experienceObj) => {
+			if (experienceObj.id === id) {
+				return {
+					...experienceObj,
+					[name]: value,
+				};
+			}
+			return experienceObj;
+		});
+		this.setState({
+			experience: newExperienceArray,
+		});
+	}
+
+	handleAddExperience() {
+		const newExperienceObj = {
+			position: '',
+			company: '',
+			location: '',
+			from: '',
+			to: '',
+			id: uniqid(),
+		};
+		this.setState({
+			experience: this.state.experience.concat(newExperienceObj),
+		});
+	}
+
+	handleDeleteExperience(id) {
+		const newExperienceArray = this.state.experience.filter(
+			(educationObj) => educationObj.id !== id
+		);
+		this.setState({
+			experience: newExperienceArray,
+		});
+	}
+
 	render() {
 		return (
 			<main>
@@ -108,6 +149,10 @@ export class Main extends Component {
 							handleChangeEducation={this.handleChangeEducation}
 							handleAddEducation={this.handleAddEducation}
 							handleDeleteEducation={this.handleDeleteEducation}
+							experience={this.state.experience}
+							handleChangeExperience={this.handleChangeExperience}
+							handleAddExperience={this.handleAddExperience}
+							handleDeleteExperience={this.handleDeleteExperience}
 						/>
 					</div>
 					<div className='back'>
