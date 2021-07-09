@@ -4,70 +4,64 @@ function EducationForm() {
 	return (
 		<div>
 			<div className='field'>
-				<label htmlFor='institute'>Institution Name</label>
+				<label>Institution Name</label>
 				<input
 					type='text'
 					name='institute'
 					className='text-input'
 					placeholder='Institution Name'
 					autoComplete='off'
-					id='institute'
 				/>
 			</div>
 			<div className='field'>
-				<label htmlFor='location'>Location</label>
+				<label>Location</label>
 				<input
 					type='text'
 					name='location'
 					className='text-input'
 					placeholder='Location'
 					autoComplete='off'
-					id='location'
 				/>
 			</div>
 			<div className='field'>
-				<label htmlFor='degree'>Degree</label>
+				<label>Degree</label>
 				<input
 					type='email'
 					name='degree'
 					className='text-input'
 					placeholder='Degree'
 					autoComplete='off'
-					id='degree'
 				/>
 			</div>
 			<div className='field'>
-				<label htmlFor='subject'>Subject</label>
+				<label>Subject</label>
 				<input
 					type='text'
 					name='subject'
 					className='text-input'
 					placeholder='Subject'
 					autoComplete='off'
-					id='subject'
 				/>
 			</div>
 			<div className='double-field'>
 				<div className='field'>
-					<label htmlFor='from'>From</label>
+					<label>From</label>
 					<input
 						type='text'
 						name='from'
 						className='text-input'
 						placeholder='From'
 						autoComplete='off'
-						id='from'
 					/>
 				</div>
 				<div className='field'>
-					<label htmlFor='to'>To</label>
+					<label>To</label>
 					<input
 						type='text'
 						name='to'
 						className='text-input'
 						placeholder='To'
 						autoComplete='off'
-						id='to'
 					/>
 				</div>
 			</div>

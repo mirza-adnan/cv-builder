@@ -4,59 +4,54 @@ function ExperienceForm() {
 	return (
 		<div>
 			<div className='field'>
-				<label htmlFor='position'>Position</label>
+				<label>Position</label>
 				<input
 					type='text'
 					name='position'
 					className='text-input'
 					placeholder='Position'
 					autoComplete='off'
-					id='position'
 				/>
 			</div>
 			<div className='field'>
-				<label htmlFor='company'>Company</label>
+				<label>Company</label>
 				<input
 					type='text'
 					name='company'
 					className='text-input'
 					placeholder='Company'
 					autoComplete='off'
-					id='company'
 				/>
 			</div>
 			<div className='field'>
-				<label htmlFor='city'>location</label>
+				<label>location</label>
 				<input
 					type='email'
 					name='location'
 					className='text-input'
 					placeholder='Location'
 					autoComplete='off'
-					id='location'
 				/>
 			</div>
 			<div className='double-field'>
 				<div className='field'>
-					<label htmlFor='from'>From</label>
+					<label>From</label>
 					<input
 						type='text'
 						name='from'
 						className='text-input'
 						placeholder='From'
 						autoComplete='off'
-						id='from'
 					/>
 				</div>
 				<div className='field'>
-					<label htmlFor='to'>To</label>
+					<label>To</label>
 					<input
 						type='text'
 						name='to'
 						className='text-input'
 						placeholder='To'
 						autoComplete='off'
-						id='to'
 					/>
 				</div>
 			</div>
