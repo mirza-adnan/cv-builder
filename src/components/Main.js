@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Form from './Form/Form';
 import Preview from './Preview/Preview';
+import uniqid from 'uniqid';
 
 export class Main extends Component {
 	constructor() {
@@ -51,7 +52,7 @@ export class Main extends Component {
 		});
 	}
 
-	handleChangeEducation(e, index) {}
+	handleChangeEducation(e, id) {}
 
 	render() {
 		return (
