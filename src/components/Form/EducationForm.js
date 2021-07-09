@@ -8,7 +8,7 @@ function EducationForm() {
 				<input
 					type='text'
 					name='institute'
-					class='text-input'
+					className='text-input'
 					placeholder='Institution Name'
 					autoComplete='off'
 					id='institute'
@@ -19,7 +19,7 @@ function EducationForm() {
 				<input
 					type='text'
 					name='location'
-					class='text-input'
+					className='text-input'
 					placeholder='Location'
 					autoComplete='off'
 					id='location'
@@ -30,7 +30,7 @@ function EducationForm() {
 				<input
 					type='email'
 					name='degree'
-					class='text-input'
+					className='text-input'
 					placeholder='Degree'
 					autoComplete='off'
 					id='degree'
@@ -41,7 +41,7 @@ function EducationForm() {
 				<input
 					type='text'
 					name='subject'
-					class='text-input'
+					className='text-input'
 					placeholder='Subject'
 					autoComplete='off'
 					id='subject'
@@ -53,7 +53,7 @@ function EducationForm() {
 					<input
 						type='text'
 						name='from'
-						class='text-input'
+						className='text-input'
 						placeholder='From'
 						autoComplete='off'
 						id='from'
@@ -64,7 +64,7 @@ function EducationForm() {
 					<input
 						type='text'
 						name='to'
-						class='text-input'
+						className='text-input'
 						placeholder='To'
 						autoComplete='off'
 						id='to'

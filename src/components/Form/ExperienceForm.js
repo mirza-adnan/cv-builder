@@ -8,7 +8,7 @@ function ExperienceForm() {
 				<input
 					type='text'
 					name='position'
-					class='text-input'
+					className='text-input'
 					placeholder='Position'
 					autoComplete='off'
 					id='position'
@@ -19,7 +19,7 @@ function ExperienceForm() {
 				<input
 					type='text'
 					name='company'
-					class='text-input'
+					className='text-input'
 					placeholder='Company'
 					autoComplete='off'
 					id='company'
@@ -30,7 +30,7 @@ function ExperienceForm() {
 				<input
 					type='email'
 					name='location'
-					class='text-input'
+					className='text-input'
 					placeholder='Location'
 					autoComplete='off'
 					id='location'
@@ -42,7 +42,7 @@ function ExperienceForm() {
 					<input
 						type='text'
 						name='from'
-						class='text-input'
+						className='text-input'
 						placeholder='From'
 						autoComplete='off'
 						id='from'
@@ -53,7 +53,7 @@ function ExperienceForm() {
 					<input
 						type='text'
 						name='to'
-						class='text-input'
+						className='text-input'
 						placeholder='To'
 						autoComplete='off'
 						id='to'
