@@ -36,6 +36,17 @@ export class Main extends Component {
 			],
 			flip: false,
 		};
+		this.handleChangePersonal = this.handleChangePersonal.bind(this);
+	}
+
+	handleChangePersonal(e) {
+		const { name, value } = e.target;
+		this.setState({
+			personal: {
+				...this.state.personal,
+				[name]: value,
+			},
+		});
 	}
 
 	render() {
@@ -43,7 +54,10 @@ export class Main extends Component {
 			<main>
 				<div className='flip-container'>
 					<div className='front'>
-						<Form />
+						<Form
+							personal={this.state.personal}
+							handleChangePersonal={this.handleChangePersonal}
+						/>
 					</div>
 					<div className='back'>
 						<Preview />
