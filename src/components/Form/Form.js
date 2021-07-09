@@ -3,12 +3,27 @@ import Personal from './Personal';
 import Education from './Education';
 import Experience from './Experience';
 
-export default function Form(props) {
+function Form(props) {
+	const {
+		personal,
+		handleChangePersonal,
+		education,
+		handleChangeEducation,
+		handleAddEducation,
+		handleDeleteEducation,
+	} = props;
 	return (
-		<form className='cv-form'>
-			<Personal />
-			<Education />
+		<div className='cv-form'>
+			<Personal personal={personal} handleChange={handleChangePersonal} />
+			<Education
+				education={education}
+				handleChange={handleChangeEducation}
+				handleAdd={handleAddEducation}
+				handleDelete={handleDeleteEducation}
+			/>
 			<Experience />
-		</form>
+		</div>
 	);
 }
+
+export default Form;
