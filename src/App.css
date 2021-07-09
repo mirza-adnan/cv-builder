@@ -187,7 +187,7 @@ textarea:focus {
 }
 
 .preview-main {
-	padding: 2em 2.8em;
+	padding: 1.5em 2em;
 	font-size: clamp(0.8rem, 2.7vw, 1rem);
 }
 
@@ -204,6 +204,7 @@ textarea:focus {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 1.3rem;
+	padding: 0px 1.5em;
 }
 
 .block * {
@@ -214,10 +215,9 @@ textarea:focus {
 	font-weight: 500;
 }
 
-.block-wrapper {
-	width: 70%;
-	display: flex;
-	justify-content: center;
+.block-content {
+	width: 45%;
+	max-width: 320px;
 }
 
 .block-content p:nth-child(1) {
