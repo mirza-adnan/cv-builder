@@ -117,6 +117,7 @@ textarea {
 	margin-top: 5px;
 	resize: none;
 	width: 100%;
+	transition: box-shadow 0.3s;
 }
 
 textarea:hover,
