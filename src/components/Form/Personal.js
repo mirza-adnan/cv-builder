@@ -85,7 +85,7 @@ export default function Personal(props) {
 				<textarea
 					name='description'
 					cols='30'
-					rows='6'
+					rows='5'
 					placeholder='Describe yourself briefly'
 					value={personal.description}
 					onChange={handleChange}></textarea>
