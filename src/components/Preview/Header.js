@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header() {
 	return (
-		<div className='prev-header'>
+		<div className='preview-header'>
 			<div className='header-left'>
 				<h2>First Last</h2>
 				<p>Job Title</p>
