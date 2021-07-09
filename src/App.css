@@ -47,25 +47,6 @@ main {
 	transform-style: preserve-3d;
 	transition: all 0.5s ease;
 	display: flex;
-	justify-content: center;
-	transform: rotateY(180deg);
-}
-
-.flip-container:hover {
-}
-
-.cv-form {
-	padding: 0px 30px 20px;
-	background-color: var(--body);
-	-webkit-box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3);
-	color: var(--clr-black);
-	overflow: hidden;
-}
-
-.cv-form h2 {
-	text-decoration: underline;
-	margin: 30px 0px;
 }
 
 .front {
@@ -79,6 +60,22 @@ main {
 	position: absolute;
 	backface-visibility: hidden;
 	transform: rotateY(180deg);
+}
+
+.cv-form {
+	padding: 0px 30px 20px;
+	background-color: var(--body);
+	-webkit-box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3);
+	color: var(--clr-black);
+	overflow: hidden;
+	margin-bottom: 32px;
+	font-size: clamp(0.7rem, 2vw, 1rem);
+}
+
+.cv-form h2 {
+	text-decoration: underline;
+	margin: 1.4em 0px 0.8em;
 }
 
 .double-field {
