@@ -23,6 +23,7 @@ export class Main extends Component {
 					subject: '',
 					from: '',
 					to: '',
+					id: uniqid(),
 				},
 			],
 			experience: [
@@ -32,6 +33,7 @@ export class Main extends Component {
 					city: '',
 					from: '',
 					to: '',
+					id: uniqid(),
 				},
 			],
 			flip: false,
@@ -48,6 +50,8 @@ export class Main extends Component {
 			},
 		});
 	}
+
+	handleChangeEducation(e, index) {}
 
 	render() {
 		return (
