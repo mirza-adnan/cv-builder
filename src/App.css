@@ -20,11 +20,37 @@ body {
 
 header {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
+	gap: 10px;
 	background-color: var(--clr-black);
 	color: var(--clr-orange);
-	padding: 30px;
-	font-size: clamp(1rem, 1.5vw, 1.5rem);
+	padding: 1.5em 3em;
+	font-size: clamp(0.8rem, 2vw, 1.5rem);
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.flip-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--clr-orange);
+	color: var(--clr-black);
+	padding: 10px 20px;
+	transition: transform 0.4s ease;
+}
+
+.flip-button:hover {
+	transform: scale(1.2);
+}
+
+.flip-button:hover span {
+	transition: transform 0.8s ease;
+	transform: rotateZ(180deg);
 }
 
 i.fa-file-alt {
@@ -47,6 +73,15 @@ main {
 	transform-style: preserve-3d;
 	transition: all 0.5s ease;
 	display: flex;
+}
+
+.flipped {
+	transform: rotateY(180deg);
+}
+
+.flip-button {
+	z-index: 10;
+	cursor: pointer;
 }
 
 .front {
@@ -147,6 +182,10 @@ textarea:focus {
 	box-shadow: 0 1px 3px rgba(32, 33, 36, 0.28);
 }
 
+.btn:active {
+	transform: scale(0.9);
+}
+
 .add-btn {
 	background-color: var(--clr-orange);
 	color: #f8f8ff;
@@ -156,10 +195,11 @@ textarea:focus {
 .preview {
 	background-color: var(--body);
 	overflow: hidden;
-	min-height: 800px;
+	min-height: 1000px;
 	word-break: break-all;
 	-webkit-box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3);
+	margin-bottom: 32px;
 }
 
 .preview-header {

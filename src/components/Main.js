@@ -4,8 +4,8 @@ import Preview from './Preview/Preview';
 import uniqid from 'uniqid';
 
 export class Main extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		this.state = {
 			personal: {
 				firstName: '',
@@ -46,7 +46,6 @@ export class Main extends Component {
 		this.handleChangeExperience = this.handleChangeExperience.bind(this);
 		this.handleAddExperience = this.handleAddExperience.bind(this);
 		this.handleDeleteExperience = this.handleDeleteExperience.bind(this);
-		this.handleFlip = this.handleFlip.bind(this);
 	}
 
 	handleChangePersonal(e) {
@@ -138,21 +137,12 @@ export class Main extends Component {
 		});
 	}
 
-	handleFlip() {
-		this.setState({
-			flip: !this.state.flip,
-		});
-	}
-
 	render() {
-		const className = this.state.flip
-			? 'flip-container flipped'
-			: 'flip-container';
+		const { flip } = this.props;
+
+		const className = flip ? 'flip-container flipped' : 'flip-container';
 		return (
 			<main>
-				<div className='flip-button' onClick={this.handleFlip}>
-					<span className='material-icons'>flip_camera_android</span>
-				</div>
 				<div className={className}>
 					<div className='front'>
 						<Form
