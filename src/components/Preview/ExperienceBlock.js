@@ -5,12 +5,12 @@ function ExperienceBlock(props) {
 	return (
 		<div className='edu-block block'>
 			<div className='time-range'>
-				{experience.from}-{experience.to}
+				{experience.from.trim()}-{experience.to.trim()}
 			</div>
 			<div className='block-content'>
-				<p>{experience.position}</p>
-				<p>{experience.company}</p>
-				<p>{experience.location}</p>
+				<p>{experience.position.trim()}</p>
+				<p>{experience.company.trim()}</p>
+				<p>{experience.location.trim()}</p>
 			</div>
 		</div>
 	);

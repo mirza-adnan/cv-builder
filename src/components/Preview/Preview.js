@@ -17,7 +17,7 @@ function Preview(props) {
 			<div className='preview-main'>
 				<section className='preview-section'>
 					<h3>Description</h3>
-					<p className='description'>{personal.description}</p>
+					<p className='description'>{personal.description.trim()}</p>
 				</section>
 				<section className='preview-section'>
 					<h3>Education</h3>

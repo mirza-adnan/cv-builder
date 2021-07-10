@@ -5,13 +5,13 @@ function EducationBlock(props) {
 	return (
 		<div className='exp-block block'>
 			<div className='time-range'>
-				{education.from}-{education.to}
+				{education.from.trim()}-{education.to.trim()}
 			</div>
 			<div className='block-content'>
-				<p>{education.institute}</p>
-				<p>{education.location}</p>
-				<p>Degree: {education.degree}</p>
-				<p>Subject: {education.subject}</p>
+				<p>{education.institute.trim()}</p>
+				<p>{education.location.trim()}</p>
+				<p>Degree: {education.degree.trim()}</p>
+				<p>Subject: {education.subject.trim()}</p>
 			</div>
 		</div>
 	);
