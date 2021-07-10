@@ -1,21 +1,24 @@
 import React from 'react';
 
-function Header() {
+function Header(props) {
+	const { personal } = props;
 	return (
 		<div className='preview-header'>
 			<div className='header-left'>
-				<h2>First Last</h2>
-				<p>Job Title</p>
+				<h2>
+					{personal.firstName} {personal.lastName}
+				</h2>
+				<p>{personal.jobTitle}</p>
 			</div>
 			<div className='header-right'>
 				<p>
-					<i className='fas fa-phone'></i>&nbsp;1223765981
+					<i className='fas fa-phone'></i>&nbsp;{personal.phoneNumber}
 				</p>
 				<p>
-					<i className='fas fa-envelope'></i>&nbsp;abc@email.com
+					<i className='fas fa-envelope'></i>&nbsp;{personal.email}
 				</p>
 				<p>
-					<i className='fas fa-map-marker-alt'></i>&nbsp;XYZ, ABC
+					<i className='fas fa-map-marker-alt'></i>&nbsp;{personal.address}
 				</p>
 			</div>
 		</div>

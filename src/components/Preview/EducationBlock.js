@@ -1,14 +1,17 @@
 import React from 'react';
 
-function EducationBlock() {
+function EducationBlock(props) {
+	const { education } = props;
 	return (
 		<div className='exp-block block'>
-			<div className='time-range'>2002-2006</div>
+			<div className='time-range'>
+				{education.from}-{education.to}
+			</div>
 			<div className='block-content'>
-				<p>ABC University of XYZ</p>
-				<p>City, Province</p>
-				<p>Degree: Degree</p>
-				<p>Subject: Subject</p>
+				<p>{education.institute}</p>
+				<p>{education.location}</p>
+				<p>Degree: {education.degree}</p>
+				<p>Subject: {education.subject}</p>
 			</div>
 		</div>
 	);
