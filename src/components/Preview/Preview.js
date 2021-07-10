@@ -3,14 +3,16 @@ import Header from './Header';
 import EducationBlock from './EducationBlock';
 import ExperienceBlock from './ExperienceBlock';
 
-export class Preview extends Component {
-	render() {
-		return (
-			<div className='preview'>
+import React from 'react'
+
+function Preview(props) {
+
+    return (
+        <div className='preview'>
 				<Header />
 				<div className='preview-main'>
 					<section className='preview-section'>
-						<h3>Personal Description</h3>
+						<h3>Description</h3>
 						<p className='description'>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
 							esse, pariatur necessitatibus ratione quas laboriosam sit in nam
@@ -30,8 +32,10 @@ export class Preview extends Component {
 					</section>
 				</div>
 			</div>
-		);
-	}
+    )
 }
+
+export default Preview
+
 
 export default Preview;
