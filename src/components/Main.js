@@ -2,38 +2,28 @@ import React, { Component } from 'react';
 import Form from './Form/Form';
 import Preview from './Preview/Preview';
 import uniqid from 'uniqid';
+import {
+	emptyPersonal,
+	emptyEducation,
+	emptyExperience,
+} from './EmptyObjects/EmptyObjects';
 
 export class Main extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			personal: {
-				firstName: '',
-				lastName: '',
-				jobTitle: '',
-				phoneNumber: '',
-				email: '',
-				address: '',
-				description: '',
+				...emptyPersonal,
 			},
 			education: [
 				{
-					institute: '',
-					location: '',
-					degree: '',
-					subject: '',
-					from: '',
-					to: '',
+					...emptyEducation,
 					id: uniqid(),
 				},
 			],
 			experience: [
 				{
-					position: '',
-					company: '',
-					location: '',
-					from: '',
-					to: '',
+					...emptyExperience,
 					id: uniqid(),
 				},
 			],
@@ -76,12 +66,7 @@ export class Main extends Component {
 
 	handleAddEducation() {
 		const newEducationObj = {
-			institute: '',
-			location: '',
-			degree: '',
-			subject: '',
-			from: '',
-			to: '',
+			...emptyEducation,
 			id: uniqid(),
 		};
 		this.setState({
@@ -116,11 +101,7 @@ export class Main extends Component {
 
 	handleAddExperience() {
 		const newExperienceObj = {
-			position: '',
-			company: '',
-			location: '',
-			from: '',
-			to: '',
+			...emptyExperience,
 			id: uniqid(),
 		};
 		this.setState({
