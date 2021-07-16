@@ -30,7 +30,7 @@ function ExperienceForm(props) {
 				/>
 			</div>
 			<div className='field'>
-				<label>location</label>
+				<label>Location</label>
 				<input
 					type='text'
 					name='location'
